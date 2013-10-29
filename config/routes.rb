@@ -2,9 +2,8 @@ HackerNewsRails::Application.routes.draw do
 
   root :to => 'hackers#index'
   resources :hackers
-  # post 'users' => "hackers#create"
-
-  # post 'comments' => 'comments#create'
+  post 'comments' => 'comments#create'
+  delete 'comments' => 'comments#destroy'
   # delete 'users' => 'hackers#delete'
 
   # The priority is based upon order of creation:

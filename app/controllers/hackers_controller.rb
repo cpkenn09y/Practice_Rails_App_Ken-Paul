@@ -3,6 +3,8 @@ class HackersController < ApplicationController
   def index
     @ken = User.new
     @users = User.all
+    @comment = Comment.new
+    @comments = Comment.all
   end
 
   def create
