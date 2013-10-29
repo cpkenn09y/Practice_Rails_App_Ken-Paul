@@ -1,0 +1,19 @@
+<p>This is the first paragraph of HackerNews</p>
+
+
+<%= form_for @ken, html:{class: "user_form"} do |f| %>
+  <label>Name:</label>
+  <%= f.text_field :name %>
+  <label>Email:</label>
+  <%= f.text_field :email %>
+  <%= f.submit "Create Account" %>
+<% end %>
+</br>
+</br>
+<%= form_for :user, url: {action: "destroy"}, html:{class: "user_delete_form"} do |f| %>
+  <label>Email:</label>
+  <%= f.text_field :email %>
+  <%= f.submit "Delete Account" %>
+<% end %>
+
+
