@@ -1,11 +1,11 @@
 HackerNewsRails::Application.routes.draw do
 
-  root :to => 'users#index'
-  # resources :users
-  post 'users' => "users#create"
+  root :to => 'hackers#index'
+  resources :hackers
+  # post 'users' => "hackers#create"
 
   # post 'comments' => 'comments#create'
-  delete 'users' => 'users#destroy'
+  # delete 'users' => 'hackers#delete'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
